@@ -3,6 +3,7 @@ import tw, { styled } from "twin.macro";
 //! ----------> TYPES <----------
 type SlideProps = {
   title: string;
+  subTitle?: string;
   children: JSX.Element;
 };
 
@@ -21,10 +22,13 @@ export const Wrapper = styled.section`
   }
 `;
 
-const Slide = ({ title, children }: SlideProps) => {
+const Slide = ({ title, subTitle, children }: SlideProps) => {
   return (
     <Wrapper>
-      <h1>{title}</h1>
+      <div css={[`inline-size: 100%;`]}>
+        <h1>{title}</h1>
+        <h2>{subTitle}</h2>
+      </div>
       {children}
     </Wrapper>
   );
