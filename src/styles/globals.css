@@ -3,25 +3,63 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --h1-base: 1.6rem;
+  --h2-base: 1.5rem;
+  --h3-base: 1.35rem;
+  --h4-base: 1.15rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+h1,
+.h1 {
+  --font-size-base: var(--h1-base);
+
+  font-size: var(--h1-base);
+}
+
+h2,
+.h2 {
+  --font-size-base: var(--h2-base);
+  --font-size-fluid: 2.5cqi;
+
+  font-size: var(--h2-base);
+}
+
+h3,
+.h3 {
+  --font-size-base: var(--h3-base);
+  --font-size-fluid: 2.25cqi;
+
+  font-size: var(--h3-base);
+}
+
+h4,
+.h4 {
+  --font-size-base: var(--h4-base);
+  --font-size-fluid: 2cqi;
+
+  font-size: var(--h4-base);
+}
+
+.fluid-type {
+  --font-size-base: 0.3rem;
+  --font-size-fluid: 4cqi;
+
+  --font-size: 0.3rem;
+}
+
+li, .li {
+  --font-size-base: 0.2rem;
+  --font-size-fluid: 5.2cqi;
+
+  --font-size: 0.3rem;
+}
+
+@supports (font-size: 1cqi) {
+  :is(h1, .h1) {
+    font-size: calc(var(--font-size-base) + var(--font-size-fluid, 5.75cqi));
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  :is(h2, .h2, h3, .h3, h4, .h4, .fluid-type, li, .li) {
+    font-size: calc(var(--font-size-base) + var(--font-size-fluid, 3cqi));
+  }
 }

@@ -3,20 +3,27 @@ import tw, { styled } from "twin.macro";
 
 //! ----------> STYLES <----------
 const Container = styled.div`
-  ${tw`w-full h-[fit-content] place-items-center`};
+  inline-size: 100%;
+  block-size: 100%
+  ${tw`place-items-center`};
   ${tw`grid grid-cols-1 gap-y-14`};
   ${tw`md:(grid-cols-[60%, 55%] gap-x-10 gap-y-0) lg:(grid-cols-[45%, 45%] gap-x-36)`};
   ${tw`xl:(grid-cols-[55%, 40%]) 2xl:(grid-cols-[55%, 45%])`};
   ${tw`font-sans text-white`};
+  ${tw`lg:(pt-8)`};
 
   ul {
+    container-type: inline-size;
+    margin-inline-start: 5.2%;
+    writing-mode: horizontal-tb;
     ${tw`flex flex-col space-y-3`};
     ${tw`list-disc list-outside`};
-    ${tw`text-lg`};
     ${tw`md:(space-y-5 text-xl) lg:(text-2xl)`};
     ${tw`xl:(space-y-8)`};
-    ${tw`2xl:(text-[2.5rem] leading-[3.5rem])`};
-    ${tw`ml-[5.3%] md:(ml-[5.2%])`};
+  }
+
+  li {
+    ${tw`leading-[125%] md:(leading-[118%] xl:(leading-[118%]))`};
   }
 `;
 
