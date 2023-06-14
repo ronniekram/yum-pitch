@@ -12,7 +12,7 @@ const style = css`
   min-block-size: 100dvh;
   ${tw`overflow-x-hidden`};
   ${tw`flex relative z-10`};
-  ${tw`bg-transparent`};
+  ${tw`bg-transparent antialiased`};
 `;
 
 const Static = styled.div`

@@ -4,7 +4,7 @@
 
 :root {
   --h1-base: 1.6rem;
-  --h2-base: 1.5rem;
+  --h2-base: 1.15rem;
   --h3-base: 1.35rem;
   --h4-base: 1.15rem;
 }
@@ -24,7 +24,7 @@ h1,
 h2,
 .h2 {
   --font-size-base: var(--h2-base);
-  --font-size-fluid: 2.5cqi;
+  --font-size-fluid: 3.5cqi;
 
   font-size: var(--h2-base);
 }
@@ -46,7 +46,7 @@ h4,
 }
 
 .fluid-type {
-  --font-size-base: 0.3rem;
+  --font-size-base: 0.2rem;
   --font-size-fluid: 4cqi;
 
   --font-size: 0.3rem;
