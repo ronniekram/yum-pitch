@@ -20,8 +20,7 @@ const Container = styled.div`
     writing-mode: horizontal-tb;
     ${tw`flex flex-col space-y-3`};
     ${tw`list-disc list-outside`};
-    ${tw`md:(space-y-5 text-xl) lg:(text-2xl)`};
-    ${tw`xl:(space-y-8)`};
+    ${tw`md:(space-y-5) xl:(space-y-8)`};
   }
 
   li {
