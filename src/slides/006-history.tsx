@@ -1,16 +1,16 @@
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
+import { useWindowSize } from "react-use";
 
 //! ----------> STYLES <----------
 const Container = styled.div`
   inline-size: 100%;
-  block-size: 100%
+  min-block-size: 100dvh
   ${tw`place-items-center`};
   ${tw`grid grid-cols-1 gap-y-14`};
-  ${tw`md:(grid-cols-[60%, 55%] gap-x-10 gap-y-0) lg:(grid-cols-[45%, 45%] gap-x-36)`};
-  ${tw`xl:(grid-cols-[55%, 40%]) 2xl:(grid-cols-[55%, 45%])`};
+  ${tw`md:(grid-cols-[75%, auto] gap-x-10 gap-y-0)`};
+  ${tw`lg:(grid-cols-[70%, auto])`};
   ${tw`font-sans text-white`};
-  ${tw`lg:(pt-8)`};
 
   ul {
     container-type: inline-size;
@@ -28,13 +28,19 @@ const Container = styled.div`
 `;
 
 const Img = styled.div`
-  ${tw`transition-all duration-300 ease-in-out`};
-  ${tw`relative`};
-  ${tw`w-full h-full min-h-[2.5rem]`};
+  ${tw`flex justify-end`};
+  ${tw`md:(h-[31.25rem])`};
+  ${tw`lg:(h-[37rem] pr-[20%])`};
+  ${tw`xl:(h-[43.75rem])`};
 `;
 
 //! ----------> COMPONENTS <----------
 const History = () => {
+  const { width } = useWindowSize();
+  const image = width < 376 ? `/images/sword.png` : `/images/sword-upright.png`;
+  const imgWidth = width < 376 ? 1591 : 71;
+  const imgHeight = width < 376 ? 160 : 700;
+
   return (
     <Container>
       <ul>
@@ -57,13 +63,11 @@ const History = () => {
 
       <Img>
         <Image
-          src="/images/sword.png"
+          src={image}
+          width={imgWidth}
+          height={imgHeight}
           alt="Red and black illustration of a sword"
-          fill
-          // width={1591}
-          // height={160}
-          style={{ objectFit: `contain`, height: `100%` }}
-          tw="md:(-rotate-90)"
+          style={{ objectFit: `contain` }}
         />
       </Img>
     </Container>
