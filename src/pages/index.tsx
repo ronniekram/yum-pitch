@@ -4,6 +4,7 @@ import "twin.macro";
 
 import Elevator from "@/slides/002-elevator";
 import Post from "@/slides/017-post";
+import Trends from "@/slides/015-trends";
 
 const gameplay = {
   one: {
@@ -58,7 +59,7 @@ const IndexPage: NextPage = () => {
   const { one, two, three } = gameplay;
   return (
     <>
-      <Post />
+      <Trends />
     </>
   );
 };
