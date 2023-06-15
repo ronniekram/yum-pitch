@@ -24,8 +24,8 @@ import AboutUs from "@/slides/019-about";
 
 const CardWrap = styled(a.div)`
   drop-shadow: 0px, 10px, 16px rgba(33, 33, 33, 0.25);
-  ${tw`flex relative`};
-  ${tw`border-2 border-white rounded-2xl`};
+  ${tw`flex mx-auto`};
+  ${tw`border-[3px] border-white rounded-2xl`};
   ${tw`w-[14.0625rem] h-[19.1875rem]`};
   ${tw`md:(w-[17.1875rem] h-[23.5rem])`};
   ${tw`lg:(w-[21.875rem] h-[29.875rem])`};
@@ -44,7 +44,6 @@ const Card = ({ src, alt }: { src: string; alt: string; }) => {
 
   const spring = useSpring({
     transform: isHover ? `scale(1.2)` : `scale(1)`,
-    zIndex: isHover ? 30 : 10,
   });
 
   return (

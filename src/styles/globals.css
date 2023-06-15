@@ -9,6 +9,11 @@
   --h4-base: 1.15rem;
 }
 
+body {
+  min-height: 100dvh;
+  max-height: fit-content;
+}
+
 html {
   background-color: #212121;
 }

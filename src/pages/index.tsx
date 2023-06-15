@@ -7,7 +7,7 @@ import Nav from "@/components/nav";
 
 //! ----------> STYLES <----------
 const Wrapper = styled.div`
-  ${tw`w-full h-full relative`};
+  ${tw`w-full h-full`};
 `;
 //! ----------> COMPONENTS <----------
 
@@ -41,7 +41,7 @@ const IndexPage: NextPage = () => {
         <Nav onClick={slideToNextItem} />
       </div>
 
-      <div tw="w-screen min-h-[100dvh] relative z-0">
+      <div tw="w-screen h-[fit-content] relative z-0">
         {carouselFragment}
       </div>
     </Wrapper>

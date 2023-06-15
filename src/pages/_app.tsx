@@ -10,19 +10,16 @@ import "@/styles/globals.css";
 const style = css`
   inline-size: 100vw;
   min-block-size: 100dvh;
+  block-size: fit-content;
   ${tw`overflow-x-hidden`};
   ${tw`flex relative z-10`};
   ${tw`bg-transparent antialiased`};
-
-  .use-spring-carousel-main-wrapper {
-    ${tw`w-screen h-[fit-content]`};
-  }
 `;
 
 const Static = styled.div`
-  ${tw`fixed z-0 opacity-30`};
+  ${tw`fixed z-0 opacity-30 overflow-hidden`};
   ${tw`top-[-50%] left-[-50%] right-[-50%] bottom-[-50%]`};
-  ${tw`w-[200%] h-[200vh]`};
+  ${tw`w-[200%] max-h-[200dvh]`};
   background: #212121 url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
   animation: bg-animation .2s infinite;
   opacity: .9;
@@ -50,7 +47,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>YUMYUMBLOODGUN</title>
       </Head>
       <GlobalStyles />
-      <Static />
+      <div tw="w-full h-full relative top-0 left-0 overflow-hidden">
+        <Static />
+      </div>
       <main
         className={`${sans.variable} ${display.variable} ${roundkey.variable}`}
         css={style}
