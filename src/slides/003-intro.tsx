@@ -20,7 +20,7 @@ const GameplayIntro = () => {
   return (
     <Wrapper>
       <Video>
-        <video poster="/video/gameplay.png" muted autoPlay loop playsInline>
+        <video poster="/video/gameplay.png" playsInline controls>
           <source src="/video/gameplay.mp4" />
         </video>
       </Video>
