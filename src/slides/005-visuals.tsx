@@ -86,6 +86,7 @@ const Visuals = () => {
               height={1200}
               alt=""
               style={{ objectFit: `cover`, objectPosition: `center` }}
+              loading="eager"
             />
           </Macroblank>
 
@@ -96,6 +97,7 @@ const Visuals = () => {
               height={1200}
               alt=""
               style={{ objectFit: `cover`, objectPosition: `center` }}
+              loading="eager"
             />
           </Anathem>
 
@@ -106,6 +108,7 @@ const Visuals = () => {
               height={1200}
               alt=""
               style={{ objectFit: `cover`, objectPosition: `center` }}
+              loading="eager"
             />
           </Haircuts>
         </Images>

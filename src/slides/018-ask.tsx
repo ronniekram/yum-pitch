@@ -66,6 +66,7 @@ const BulletPoint = ({ label }: { label: string }) => {
           width={28}
           height={75}
           style={{ objectFit: `contain` }}
+          loading="eager"
         />
       </div>
       <h2>{label}</h2>
@@ -122,6 +123,7 @@ const Asking = () => {
             alt=""
             width={563}
             height={578}
+            loading="eager"
           />
         </Logo>
       </Container>

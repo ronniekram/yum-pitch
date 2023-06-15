@@ -39,6 +39,7 @@ const AboutUs = () => {
             width={680}
             height={854}
             alt="Goblin Delight's Logo - A mix of a shih tzu and goblin but it's also an onion."
+            loading="eager"
           />
         </Img>
 

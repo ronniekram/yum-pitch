@@ -14,6 +14,7 @@ const Roadmap = () => {
           width={2154}
           height={900}
           alt=""
+          loading="eager"
         />
       </div>
     </Slide>

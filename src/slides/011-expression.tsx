@@ -47,6 +47,7 @@ const Expressions = () => {
               width={717}
               height={435}
               alt=""
+              loading="eager"
             />
           </Img>
         </div>

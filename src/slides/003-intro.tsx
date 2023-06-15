@@ -2,7 +2,7 @@ import tw, { styled } from "twin.macro";
 
 //! ----------> STYLES <----------
 export const Wrapper = styled.section`
-  ${tw`w-full max-h-fit flex flex-col`};
+  ${tw`w-full max-h-fit flex flex-col items-center`};
   ${tw`space-y-8`};
   ${tw`px-[5.3%] pt-10 pb-16 md:(px-[5.2%]) xl:(pt-14) 2xl:(px-0)`};
 `;

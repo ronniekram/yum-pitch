@@ -117,6 +117,7 @@ const Platforms = () => {
               width={563}
               height={578}
               alt=""
+              loading="eager"
             />
           </Img>
         </Section>

@@ -50,6 +50,7 @@ const SinglePlayer = () => {
               width={900}
               height={451}
               alt=""
+              loading="eager"
             />
           </Img>
         </div>

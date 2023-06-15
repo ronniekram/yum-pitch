@@ -39,6 +39,7 @@ const Elevator = () => {
               height={700}
               alt=""
               style={{ objectFit: `contain` }}
+              loading="eager"
             />
           </Img>
         </div>

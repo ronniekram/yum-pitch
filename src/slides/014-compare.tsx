@@ -99,6 +99,7 @@ const Game = ({ img, name, platforms, sales, price }: GameProps) => {
           height={img.height}
           alt={img.alt}
           style={{ objectFit: `cover`, objectPosition: `center` }}
+          loading="eager"
         />
       </Img>
 

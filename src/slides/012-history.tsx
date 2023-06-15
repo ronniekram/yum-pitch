@@ -70,6 +70,7 @@ const History = () => {
             height={imgHeight}
             alt="Red and black illustration of a sword"
             style={{ objectFit: `contain` }}
+            loading="eager"
           />
         </Img>
       </Container>

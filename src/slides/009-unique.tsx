@@ -60,6 +60,7 @@ const Advantages = () => {
               width={814}
               height={500}
               style={{ objectFit: `contain`, margin: `auto` }}
+              loading="eager"
             />
           </Img>
         </Section>
@@ -73,6 +74,7 @@ const Advantages = () => {
               width={1591}
               height={160}
               style={{ objectFit: `contain`, margin: `auto` }}
+              loading="eager"
             />
           </Img>
 

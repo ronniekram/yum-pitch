@@ -81,6 +81,7 @@ const Influences = () => {
             alt=""
             tw="h-full"
             style={{ objectFit: `cover`, objectPosition: `left` }}
+            loading="eager"
           />
         </Large>
         <Small
@@ -95,6 +96,7 @@ const Influences = () => {
             alt=""
             tw="h-full"
             style={{ objectFit: `cover`, objectPosition: `left` }}
+            loading="eager"
           />
         </Small>
       </div>
