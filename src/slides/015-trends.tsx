@@ -34,6 +34,12 @@ const Trends = () => {
             Roguelike Deckbuilders also continue to be one of Steam's most consistently high selling genres- we believe we can combine the two to create a unique and compelling experience that merges the best of both genres.
           </p>
         </Copy>
+
+        <div tw="w-full h-full overflow-hidden">
+          <video poster="/video/angel.png" autoPlay playsInline muted loop tw="h-full object-cover object-center">
+            <source src="/video/angel.mp4" />
+          </video>
+        </div>
       </Container>
     </Slide>
   );

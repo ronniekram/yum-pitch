@@ -32,6 +32,13 @@ const CardWrap = styled(a.div)`
   ${tw`xl:(w-[25rem] h-[34.125rem])`};
 `;
 
+const PlayerOne = styled.div`
+  ${tw`flex w-[20.9375rem] h-[11.6875rem]`};
+  ${tw`md:(w-[23.4375rem] h-[13.0625rem])`};
+  ${tw`lg:(w-[28.125rem] h-[15.6875rem])`};
+  ${tw`xl:(w-[31.25rem] h-[17.25rem])`};
+`;
+
 const Card = ({ src, alt }: { src: string; alt: string; }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
 
@@ -76,9 +83,14 @@ const gameplay = {
       </>
     ),
     media: (
-      <div tw="flex">
-
-      </div>
+      <PlayerOne>
+        <Image
+          src="/images/character-1.gif"
+          alt=""
+          width={1232}
+          height={686}
+        />
+      </PlayerOne>
     ),
   },
   two: {

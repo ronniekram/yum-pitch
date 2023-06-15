@@ -15,7 +15,7 @@ const Container = styled.div`
   container-type: inline-size;
   inline-size: 100%;
   ${tw`grid grid-cols-1 gap-y-8`};
-  ${tw`2xl:(grid-cols-[51%, auto] gap-x-[6%])`};
+  ${tw`lg:(grid-cols-[51%, auto] gap-x-[6%])`};
   ${tw`font-sans text-white`};
 
   p {
