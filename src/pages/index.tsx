@@ -2,18 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import "twin.macro";
 
-import Intro from "@/slides/001-intro";
-import GameplayIntro from "@/slides/003-intro";
-import GameplaySlide from "@/slides/006-gameplay";
-import History from "@/slides/012-history";
-import Roadmap from "@/slides/013-roadmap";
-import Advantages from "@/slides/009-unique";
-import Influences from "@/slides/004-influence";
-import Visuals from "@/slides/005-visuals";
-import Compare from "@/slides/014-compare";
-import Platforms from "@/slides/016-platforms";
-import Asking from "@/slides/018-ask";
-import AboutUs from "@/slides/019-about";
+import Elevator from "@/slides/002-elevator";
 
 const gameplay = {
   one: {
@@ -68,7 +57,7 @@ const IndexPage: NextPage = () => {
   const { one, two, three } = gameplay;
   return (
     <>
-      <Asking />
+      <Elevator />
     </>
   );
 };
