@@ -33,11 +33,11 @@ const IndexPage: NextPage = () => {
 
   return (
     <Wrapper>
-      <div tw="h-screen flex items-end px-4 pb-12 fixed left-0 z-10">
+      <div tw="h-[100dvh] flex items-end px-4 pb-12 fixed left-0 z-10">
         <Nav onClick={slideToPrevItem} prev />
       </div>
 
-      <div tw="h-screen flex items-end px-4 pb-12 fixed right-0 z-10">
+      <div tw="h-[100dvh] flex items-end px-4 pb-12 fixed right-0 z-10">
         <Nav onClick={slideToNextItem} />
       </div>
 
