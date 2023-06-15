@@ -9,11 +9,12 @@ import Influences from "@/slides/010-influence";
 import Visuals from "@/slides/011-visuals";
 import Compare from "@/slides/012-compare";
 import Platforms from "@/slides/013-platforms";
+import AboutUs from "@/slides/015-about";
 
 const IndexPage: NextPage = () => {
   return (
     <>
-      <Platforms />
+      <AboutUs />
     </>
   );
 };
