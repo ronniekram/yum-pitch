@@ -3,6 +3,7 @@ import Image from "next/image";
 import "twin.macro";
 
 import Elevator from "@/slides/002-elevator";
+import Post from "@/slides/017-post";
 
 const gameplay = {
   one: {
@@ -57,7 +58,7 @@ const IndexPage: NextPage = () => {
   const { one, two, three } = gameplay;
   return (
     <>
-      <Elevator />
+      <Post />
     </>
   );
 };
