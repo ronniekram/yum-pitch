@@ -65,12 +65,22 @@ const History = () => {
 
         <Img>
           <Image
-            src={image}
-            width={imgWidth}
-            height={imgHeight}
+            src="/images/sword.png"
+            width={1591}
+            height={160}
             alt="Red and black illustration of a sword"
             style={{ objectFit: `contain` }}
             loading="eager"
+            tw="md:(hidden)"
+          />
+          <Image
+            src="/images/sword-upright.png"
+            width={71}
+            height={700}
+            alt="Red and black illustration of a sword"
+            style={{ objectFit: `contain` }}
+            loading="eager"
+            tw="hidden md:(flex)"
           />
         </Img>
       </Container>
