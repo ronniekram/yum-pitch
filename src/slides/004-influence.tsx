@@ -40,8 +40,8 @@ const Influences = () => {
 
   useEffect(() => {
     if (width <= 375) {
-      setSm([`9.375rem`, `19.4375rem`]);
-      setLg([`15.625rem`, `20.9375rem`]);
+      setSm([`9.375rem`, `18.4375rem`]);
+      setLg([`15.625rem`, `19.9375rem`]);
       return;
     }
     if (width <= 768) {
