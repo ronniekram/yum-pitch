@@ -7,6 +7,7 @@ import Slide from "@/styles/shared";
 //! ----------> STYLES <----------
 const H2 = tw.h2`font-display font-bold text-3xl md:(text-5xl) xl:(text-6xl)`;
 const P = tw.p`font-sans text-base md:(text-lg) xl:(text-3xl)`;
+const A = tw.a`font-sans font-bold text-gold transition duration-300 ease-in-out hover:(underline) text-base md:(text-lg) lg:(text-xl) xl:(text-2xl)`;
 
 const Bio = tw.div`flex flex-col space-y-2 md:(space-y-3) xl:(space-y-4)`;
 const Img = tw.div`mx-auto w-[12.5rem] h-[15.75rem] md:(w-[17.1875rem] h-[21.625rem] row-span-2) lg:(w-[25rem] h-[31.4375rem]) xl:(w-[35.9375rem] h-[45.1875rem])`;
@@ -41,12 +42,19 @@ const AboutUs = () => {
           />
         </Img>
 
-        <Bio>
-          <H2>Seb Galvez</H2>
-          <P>
-            Seb has worked as an artist and designer on multiple projects over the past three years since entering the industry, with both small studios and individual clients. Doesn't listen to anything without a bass line.
-          </P>
-        </Bio>
+        <div>
+          <Bio>
+            <H2>Seb Galvez</H2>
+            <P>
+              Seb has worked as an artist and designer on multiple projects over the past three years since entering the industry, with both small studios and individual clients. Doesn't listen to anything without a bass line.
+            </P>
+          </Bio>
+
+          <div tw="flex space-x-8 mt-4 xl:(mt-6)">
+            <A href="mailto:press@goblindelight.com">press@goblindelight.com</A>
+            <A href="https://yumyum.cool/" target="_blank" rel="noreferrer">yumyum.cool</A>
+          </div>
+        </div>
 
       </Container>
     </Slide>

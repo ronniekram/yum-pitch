@@ -5,6 +5,7 @@ import Slide from "@/styles/shared";
 
 //! ----------> TYPES <----------
 type Props = {
+  title: string;
   body: JSX.Element;
   media: JSX.Element;
 };
@@ -23,9 +24,9 @@ const Container = styled.div`
 `;
 
 //! ----------> COMPONENTS <----------
-const GameplaySlide = ({ body, media }: Props) => {
+const GameplaySlide = ({ title, body, media }: Props) => {
   return (
-    <Slide title="Gameplay">
+    <Slide title={title}>
       <Container>
         <div tw="2xl:(flex items-center)">
           <p>{body}</p>
