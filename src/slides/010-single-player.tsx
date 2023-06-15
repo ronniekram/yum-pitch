@@ -46,9 +46,9 @@ const SinglePlayer = () => {
         <div tw="flex justify-end">
           <Img>
             <Image
-              src="/images/character-1.gif"
-              width={1232}
-              height={686}
+              src="/images/character-3.gif"
+              width={900}
+              height={451}
               alt=""
             />
           </Img>
