@@ -3,7 +3,7 @@ import Head from "next/head";
 import tw, { styled, css } from "twin.macro";
 
 import GlobalStyles from "@/styles/global";
-import { sans, display } from "@/utility/fonts";
+import { sans, display, roundkey } from "@/utility/fonts";
 
 import "@/styles/globals.css";
 
@@ -48,7 +48,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <GlobalStyles />
       <Static />
       <main
-        className={`${sans.variable} ${display.variable}`}
+        className={`${sans.variable} ${display.variable} ${roundkey.variable}`}
         css={style}
       >
         <Component {...pageProps} />

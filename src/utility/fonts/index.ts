@@ -39,3 +39,13 @@ export const display = localFont({
   ],
   variable: "--display",
 });
+
+export const roundkey = localFont({
+  src: [
+    {
+      path: "./Sovereign.ttf",
+      weight: "400",
+    },
+  ],
+  variable: "--roundkey",
+});

@@ -19,6 +19,8 @@ h1,
 
   font-size: var(--h1-base);
   line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 h2,
