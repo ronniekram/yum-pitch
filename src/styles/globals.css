@@ -45,7 +45,7 @@ h4,
   font-size: var(--h4-base);
 }
 
-.fluid-type {
+p, .p {
   --font-size-base: 0.2rem;
   --font-size-fluid: 4cqi;
 
@@ -55,6 +55,13 @@ h4,
 li, .li {
   --font-size-base: 0.2rem;
   --font-size-fluid: 4.05cqi;
+
+  --font-size: 0.3rem;
+}
+
+.fluid-type {
+  --font-size-base: 0.2rem;
+  --font-size-fluid: 4cqi;
 
   --font-size: 0.3rem;
 }
