@@ -107,7 +107,7 @@ const Platforms = () => {
             <div>
               <h3 tw="xl:(mb-2)">Intended Price</h3>
               <p tw="font-sans font-xbold text-white text-xl lg:(text-2xl) xl:(text-[40px] leading-[52px])">
-                $14.99
+                $19.99
               </p>
             </div>
           </div>

@@ -1,10 +1,10 @@
-import type { NextPage } from "next";
+/* eslint-disable react/jsx-key */
 import Image from "next/image";
 import "twin.macro";
 
 import Intro from "@/slides/001-intro";
 import GameplayIntro from "@/slides/003-intro";
-import GameplaySlide from "@/slides/006-gameplay";
+import GameplaySlide from "@/slides/006-gameplay"; // 3 - 5
 import History from "@/slides/012-history";
 import Roadmap from "@/slides/013-roadmap";
 import Advantages from "@/slides/009-unique";
@@ -64,13 +64,28 @@ const gameplay = {
   },
 };
 
-const IndexPage: NextPage = () => {
-  const { one, two, three } = gameplay;
-  return (
-    <>
-      <Asking />
-    </>
-  );
-};
-
-export default IndexPage;
+export const slides = [
+  <Intro />,
+  <GameplayIntro />,
+  <GameplaySlide
+    body={gameplay.one.body}
+    media={gameplay.one.media}
+  />,
+  <GameplaySlide
+    body={gameplay.two.body}
+    media={gameplay.two.media}
+  />,
+  <GameplaySlide
+    body={gameplay.three.body}
+    media={gameplay.three.media}
+  />,
+  <History />,
+  <Roadmap />,
+  <Advantages />,
+  <Influences />,
+  <Visuals />,
+  <Compare />,
+  <Platforms />,
+  <Asking />,
+  <AboutUs />,
+];
