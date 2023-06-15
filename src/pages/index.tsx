@@ -1,9 +1,15 @@
 import type { NextPage } from "next";
 import { useSpringCarousel } from "react-spring-carousel";
-import "twin.macro";
+import tw, { styled } from "twin.macro";
 
 import { slides } from "@/slides";
 import Nav from "@/components/nav";
+
+//! ----------> STYLES <----------
+const Wrapper = styled.div`
+  ${tw`w-full h-full relative`};
+`;
+//! ----------> COMPONENTS <----------
 
 const IndexPage: NextPage = () => {
   const {
@@ -20,13 +26,13 @@ const IndexPage: NextPage = () => {
         </>
       ),
     })),
-    springConfig: { tension: 120, friction: 14 },
+    springConfig: { tension: 210, friction: 20 },
   });
 
 
 
   return (
-    <div tw="w-screen h-full">
+    <Wrapper>
       <div tw="h-screen flex items-end px-4 pb-12 fixed left-0 z-10">
         <Nav onClick={slideToPrevItem} prev />
       </div>
@@ -38,7 +44,7 @@ const IndexPage: NextPage = () => {
       <div tw="w-screen min-h-[100dvh] relative z-0">
         {carouselFragment}
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

@@ -10,11 +10,11 @@ type Props = JSX.IntrinsicElements[`button`] & {
 //! ----------> STYLES <----------
 const Circle = styled.button`
   ${tw`w-7 h-7 rounded-full`};
-  ${tw`md:(w-8 h-8) xl:(w-10 h-10)`};
-  ${tw`m-4 md:(m-3) xl:(m-1)`};
+  ${tw`md:(w-8 h-8) xl:(w-12 h-12)`};
+  ${tw`m-4 md:(m-3)`};
   ${tw`bg-gold text-black`};
   ${tw`flex items-center justify-center`};
-  ${tw`text-[24px] md:(text-[28px]) xl:(text-[36px])`};
+  ${tw`text-[24px] md:(text-[28px]) xl:(text-[40px])`};
 `;
 
 //! ----------> COMPONENTS <----------

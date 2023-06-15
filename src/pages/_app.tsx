@@ -13,6 +13,10 @@ const style = css`
   ${tw`overflow-x-hidden`};
   ${tw`flex relative z-10`};
   ${tw`bg-transparent antialiased`};
+
+  .use-spring-carousel-main-wrapper {
+    ${tw`w-screen h-[fit-content]`};
+  }
 `;
 
 const Static = styled.div`

@@ -5,8 +5,8 @@ import { YumYum, Bloodgun, SamuraiBeats } from "@/assets/001";
 
 //! ----------> STYLES <----------
 const Container = styled.section`
-  ${tw`w-full pt-20 pb-24 md:(pb-32) xl:(pt-24)`};
-  ${tw`flex flex-col space-y-8 md:(space-y-12) xl:(space-y-20)`};
+  ${tw`w-screen min-h-[100dvh] pt-20 pb-24 md:(pb-32) xl:(pt-24)`};
+  ${tw`flex flex-col space-y-8 md:(space-y-12) xl:(space-y-16)`};
   ${tw`min-h-screen`};
 `;
 
