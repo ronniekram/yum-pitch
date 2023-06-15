@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-key */
 import Image from "next/image";
-import "twin.macro";
+import { useState, useEffect } from "react";
+import { useSpring, animated as a } from "react-spring";
+import tw, { styled } from "twin.macro";
 
 import Intro from "@/slides/001-intro";
 import Elevator from "@/slides/002-elevator";
@@ -19,6 +21,51 @@ import Platforms from "@/slides/016-platforms";
 import Post from "@/slides//017-post";
 import Asking from "@/slides/018-ask";
 import AboutUs from "@/slides/019-about";
+
+const CardWrap = styled(a.div)`
+  drop-shadow: 0px, 10px, 16px rgba(33, 33, 33, 0.25);
+  ${tw`flex relative`};
+  ${tw`border-2 border-white rounded-2xl`};
+  ${tw`w-[14.0625rem] h-[19.1875rem]`};
+  ${tw`md:(w-[17.1875rem] h-[23.5rem])`};
+  ${tw`lg:(w-[21.875rem] h-[29.875rem])`};
+  ${tw`xl:(w-[25rem] h-[34.125rem])`};
+`;
+
+const Card = ({ src, alt }: { src: string; alt: string; }) => {
+  const [isHover, setIsHover] = useState<boolean>(false);
+
+  const spring = useSpring({
+    transform: isHover ? `scale(1.2)` : `scale(1)`,
+    zIndex: isHover ? 30 : 10,
+  });
+
+  return (
+    <CardWrap
+      style={spring}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        width={450}
+        height={623}
+        style={{ objectFit: `cover`, objectPosition: `center` }}
+      />
+    </CardWrap>
+  );
+};
+
+const Perks = () => {
+  return (
+    <div tw="w-full flex ">
+      {/* <Card src="/images/card-1.png" alt="" /> */}
+      <Card src="/images/card-2.png" alt="" />
+      {/* <Card src="/images/card-3.png" alt="" /> */}
+    </div>
+  );
+};
 
 const gameplay = {
   one: {
@@ -59,16 +106,7 @@ const gameplay = {
         Upon losing a round, the losing player chooses from one of several <span tw="font-bold">blessings</span> that alter their moveset, such as making bullets explode on impact, empowering their sword, or
       </>
     ),
-    media: (
-      <div tw="flex order-[-1]">
-        <Image
-          src="/images/round-1.png"
-          width={1280}
-          height={720}
-          alt=""
-        />
-      </div>
-    ),
+    media: <Perks />,
   },
 };
 
